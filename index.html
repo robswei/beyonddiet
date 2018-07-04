@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Beyond Diet</title>
+
+	<style type="text/css">
+		@font-face {
+			font-family: Muli;
+			src: url(fonts/Muli-ExtraLight.ttf);
+			font-style: normal;
+			font-weight: 200;
+		}
+
+		@font-face {
+			font-family: Muli;
+			src: url(fonts/Muli-Light.ttf);
+			font-style: normal;
+			font-weight: 300;
+		}
+
+		@font-face {
+			font-family: Muli;
+			src: url(fonts/Muli-Regular.ttf);
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+			font-family: Muli;
+
+		}
+
+
+		.background-image {
+			position: relative;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+
+
+
+		}
+
+
+		/*HERO SECTION STYLING */
+
+		.hero {
+			background-image: url("images/Woman_Hero.png");
+			min-height: 73%;
+		}
+
+		.logo {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 4%;
+
+			width: 5%;
+			height: auto;
+
+		}
+
+		.hero h1 {
+			text-align: center;
+			font-weight: 200;
+			font-size: 20pt;
+			color: #0b829f;
+
+			padding: 7% 2% 0% 2%;
+		}
+
+		.hero p {
+			text-align: center;
+			font-weight: 200;
+			font-size: 11pt;
+			color: #0b829f;
+			padding: 1.5% 2%;
+			line-height: 15pt;
+
+			margin: 0;
+		}
+
+
+		/* YELLOW BOX SECTION */
+
+		.yellow_box {
+
+			text-align: center;
+			padding: 10% 5% 12% 4%;
+			background-color: #ffc871;
+			color: white;
+
+		}
+
+		.yellow_box p {
+			padding-top: 1%;
+			margin: 0;
+			font-size: 11pt;
+			line-height: 15pt;
+		}
+
+		/* STEP SECTIONS STYLING */
+
+		.stepImg {
+			width: 100%;
+		}
+
+		.stepIcon {
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.icon1 {
+			bottom: 35px;
+		}
+
+		.icon2 {
+			bottom: 35px;
+		}
+
+		.icon3 {
+			bottom: 30px;
+		}
+
+		.icon4 {
+			bottom: 30px;
+		}
+
+		.icon5 {
+			bottom: 31px;
+		}
+
+		.step1 {
+			margin: 0;
+		}
+
+		.step2 {
+			position: relative;
+			bottom: 8%;
+		}
+
+		.step3 {
+			position: relative;
+			bottom: 18%;
+		}
+
+		.step4 {
+			position: relative;
+			bottom: 28%;
+		}
+
+		.step5 {
+			position: relative;
+			bottom: 38%;
+		}
+
+		.step h2 {
+
+			font-size: 36px;
+			font-weight: 300;
+			line-height: 30pt;
+
+			position: relative;
+			bottom: 37px;
+			padding-left: 14px;
+
+		}
+
+		.step1 h2 {
+			padding-left: 4%;
+		}
+
+		.step2 h2 {
+			padding-left: 6%;
+			margin-top: 8%;
+		}
+
+		.step3 h2 {
+			padding: 1.5% 0 0 6%;
+		}
+
+		.step4 h2 {
+			padding: 2% 0 0 6%;
+		}
+
+		.step5 h2 {
+			padding: 1.5% 0 0 6%;
+		}
+
+		.step h4 {
+			position: relative;
+			bottom: 48px;
+			padding: 0 22px;
+
+			font-size: 18px;
+			font-weight: 300;
+		}
+
+		.step4 h4 {
+			bottom: 50px;
+		}
+
+		.step5 h4 {
+			bottom: 50px;
+		}
+
+		.step p {
+			font-size: 14px;
+			font-weight: 200;
+
+			position: relative;
+			padding: 0 19px 0 22px;
+			line-height: 15pt;
+		}
+
+		.step1 p {
+			bottom: 44px;
+			padding: 0 14px 0 15px;
+		}
+
+		.step2 p {
+			bottom: 68px;
+			padding-left: 20px;
+		}
+
+		.step3 p {
+			bottom: 68px;
+		}
+
+		.step4 p {
+			bottom: 64px;
+			padding-left: 22px;
+		}
+
+		.step5 p {
+			bottom: 64px;
+			padding-left: 22px;
+		}
+
+		.step4 .break {
+			padding: 0;
+		}
+
+		.step p .link a {
+			color: black;
+		}
+
+		.step .read-more-target .title1,
+		.step .read-more-target .title2,
+		.step .read-more-target .title3,
+		.step .read-more-target .title4,
+		.step .read-more-target .title5 {
+			font-size: 18px;
+			font-weight: 300;
+		}
+
+		.step .read-more-target .title4.top {
+			padding-top: 5%;
+			line-height: 26px;
+		}
+
+		
+
+		/* Text Color */
+
+		.step p .title3,
+		.step3 h2,
+		.step3 h4 {
+			color: #dd5338;
+		}
+
+		.step p .title2,
+		.step p .title4,
+		.step2 h2,
+		.step2 h4,
+		.step4 h2,
+		.step4 h4 {
+			color: #69c0d8;
+		}
+
+		.step p .title1,
+		.step p .title5,
+		.step1 h2,
+		.step5 h2,
+		.step5 h4 {
+			color: #ffc871;
+		}
+
+
+		/* READ MORE / LESS FEATURE */
+
+		.read-more-state {
+			display: none;
+		}
+
+		.read-more-target {
+			display: none
+		}
+
+		.read-more-state:checked~.read-more-wrap .dots {
+			display: none;
+		}
+
+		.read-more-state:checked~.read-more-wrap .read-more-target {
+			display: inline;
+			max-height: 999em;
+		}
+
+		.read-more-state~.read-more-trigger:before {
+			content: 'Read More +';
+		}
+
+		.read-more-state:checked~.read-more-trigger:before {
+			content: 'Show Less -';
+			position: relative;
+			top: 40px;
+			left: -100px;
+
+		}
+
+		.step1 .read-more-state:checked~.read-more-trigger:before {
+			top: 40px;
+			left: -100px;
+
+		}
+
+		.step2 .read-more-state:checked~.read-more-trigger:before {
+			left: -115px;
+		}
+
+		.step4 .read-more-state:checked~.read-more-trigger:before,
+		.step5 .read-more-state:checked~.read-more-trigger:before {
+			top: 40px;
+			left: -135px;
+
+		}
+
+		.step3 .read-more-state:checked~.read-more-trigger:before {
+			top: 40px;
+			left: -130px;
+		}
+
+		.step .read-more-wrap .read-more-target .intro,
+		.step .read-more-wrap .intro {
+			opacity: 0.85;
+			display: inline;
+		}
+
+		.step .read-more-wrap .read-more-target .step1par1 {
+			padding: 1.5% 4% 0 0;
+			opacity: 0.85;
+		}
+
+		.step .read-more-wrap .read-more-target .step1par2 {
+			padding: 2% 0 0 0;
+			opacity: 0.85;
+		}
+
+		.step .read-more-wrap .read-more-target .step1par3 {
+			padding: 6% 0 0 0;
+			opacity: 0.85;
+		}
+
+		.step .read-more-wrap .read-more-target .step3par2 {
+			padding: 2% 5% 0 0;
+			opacity: 0.85;
+		}
+
+		.step .read-more-wrap .read-more-target .step3par3 {
+			padding: 1.5% 5% 0 0;
+			opacity: 0.85;
+		}
+
+		.step .read-more-wrap .read-more-target .step5par1 {
+			padding: 1.5% 4% 0 0;
+			opacity: 0.85;
+		}
+
+		.step .read-more-wrap .read-more-target .step5par2 {
+			padding: 6% 0 0 0;
+			opacity: 0.85;
+		}
+
+		.step2 .read-more-wrap .read-more-target .link-wrap {
+			padding-top: 2%;
+		}
+
+		.step3 .read-more-wrap .read-more-target .link-wrap {
+			padding: 6% 6% 0 0;
+		}
+
+		.step4 .read-more-wrap .read-more-target .step4par1 {
+			padding: 0.5% 4% 0 0;
+			opacity: 0.85;
+		}
+
+		.step4 .read-more-wrap .read-more-target .step4par2 {
+			padding: 2% 4% 0 0;
+			opacity: 0.85;
+		}
+
+		.step4 .read-more-wrap .read-more-target .step4par3 {
+			padding: 6% 4% 0 0;
+			opacity: 0.85;
+		}
+
+		.step p .read-more-target .link {
+			padding-top: 4%;
+			opacity: 0.85;
+		}
+
+
+
+		.step4 p .read-more-target .link {
+			padding-top: 6%;
+			opacity: 0.85;
+		}
+
+		.step p .read-more-target span {
+			display: inline-block;
+			padding-top: 6%;
+		}
+
+
+		.step p .read-more-target .tog {
+			display: inline;
+		}
+
+		.step4 p .read-more-target span,
+		.step3 p .read-more-target span {
+			padding-top: 6.5%;
+		}
+
+		.step3 p .read-more-target .protein {
+			padding-top: 6%;
+		}
+
+		.read-more-trigger {
+			display: inline-block;
+			cursor: pointer;
+			color: black;
+			font-size: 10pt;
+			font-weight: 600;
+			font-family: Muli;
+		}
+
+		.step1 .read-more-trigger {
+
+
+			margin: 0 0 0 65%;
+			padding-bottom: 15%;
+
+			position: relative;
+			bottom: 81px;
+
+		}
+
+		.step2 .read-more-trigger {
+
+			margin: 0 0 0 65%;
+			padding-bottom: 15%;
+
+			position: relative;
+			bottom: 103px;
+			right: -25px;
+
+
+		}
+
+		.step3 .read-more-trigger {
+
+			margin: 0 0 0 65%;
+			padding-bottom: 15%;
+
+			position: relative;
+			bottom: 103px;
+			right: -10%;
+
+
+		}
+
+		.step4 .read-more-trigger {
+
+			margin: 0 0 0 65%;
+			padding-bottom: 15%;
+
+			position: relative;
+			bottom: 99px;
+			right: -12%;
+
+
+		}
+
+		.step5 .read-more-trigger {
+
+			margin: 0 0 0 65%;
+			padding-bottom: 15%;
+
+			position: relative;
+			bottom: 99px;
+			right: -13%;
+
+
+		}
+
+		/* TESTIMONIAL SECTION STYLING */
+
+		.testimonial {
+			background-image: url("Images/Testimonial_Woman.png");
+			min-height: 85%;
+			margin-bottom: 20%;
+
+			position: relative;
+			bottom: 48%;
+
+
+		}
+
+		.testimonial-form {
+			position: relative;
+			padding: 88% 2% 5% 2%;
+
+
+		}
+
+		.testimonial-block {
+			background-color: white;
+			border-radius: 25px;
+			margin-left: 2%;
+			margin-right: 2%;
+			text-align: center;
+
+			padding: 5px 10px 5px 10px;
+
+		}
+
+		.testimonial-block h1 {
+			color: #119cc3;
+			font-size: 36px;
+			font-weight: 400;
+			line-height: 38px;
+		}
+
+		.testimonial-block q {
+			position: relative;
+			bottom: 14px;
+			font-size: 14px;
+			line-height: 0px;
+		}
+
+		q::before {
+			font-size: 50px;
+			color: #119cc3;
+			position: relative;
+			top: 20px;
+		}
+
+		q::after {
+			font-size: 50px;
+			color: #119cc3;
+			position: relative;
+			top: 25px;
+		}
+
+		.testimonial-block h4 {
+			color: #119cc3;
+			font-size: 10px;
+			font-weight: 600;
+			position: relative;
+			bottom: 18px;
+		}
+
+		.testimonial-block a {
+			display: inline-block;
+			color: #119cc3;
+			font-size: 12px;
+			font-weight: 400;
+			padding-bottom: 15px;
+			position: relative;
+			bottom: 15px;
+		}
+
+
+		/* HAPPIER HEALTHIER / OVAL SECTION STYLING */
+
+		.rect {
+			position: relative;
+			bottom: 62%;
+		}
+
+		.rect img {
+			width: 100%;
+			z-index: 5;
+		}
+
+
+		.rect .oval {
+			position: absolute;
+			bottom: 12%;
+		}
+
+
+		.rect .oval h2 {
+			color: white;
+			font-size: 36px;
+			font-weight: 300;
+			line-height: 40px;
+
+			text-align: center;
+			margin: 0 0 9% 0;
+
+			z-index: 15;
+		}
+
+		.rect .row .col {
+			padding-top: 0%;
+			padding-bottom: 17.5%;
+			font-size: 10pt;
+		}
+
+
+		.row {
+			display: flex;
+			position: relative;
+			bottom: -10%;
+		}
+
+		.col {
+			flex: 1;
+
+			padding-bottom: 0%;
+
+			text-align: center;
+			color: white;
+
+			z-index: 10;
+		}
+
+		.col img {
+			width: 12%;
+			height: auto;
+
+			opacity: 0.25;
+		}
+
+		.col1 {
+			order: 1;
+			padding-left: 3%;
+		}
+
+		.col2 {
+			order: 2;
+		}
+
+		.col3 {
+			order: 3;
+			padding-right: 3%;
+		}
+
+
+		/* JOIN SECTION STYLING */
+
+		.join {
+			background-image: url("Images/Join_Beyond_Diet.png");
+			min-height: 80%;
+			position: relative;
+			bottom: 70%;
+
+			z-index: -1;
+		}
+
+		.join h1 {
+			text-align: center;
+			padding: 24% 10% 0 10%;
+			color: #119cc3;
+			font-weight: 300;
+			font-size: 28pt;
+			line-height: 40px;
+
+		}
+
+		.join form {
+			position: relative;
+			background-color: white;
+			padding: 8% 5% 4% 6%;
+			border-radius: 20px;
+			margin-left: 2%;
+			margin-right: 2%;
+			font-size: 15px;
+
+
+		}
+
+		.join form input {
+			width: 100%;
+			padding: 2.5% 0 2.5% 2%;
+			margin: 2.5% 0;
+			box-sizing: border-box;
+			border: none;
+			border-radius: 30px;
+			background-color: rgba(238, 238, 238, 0.65);
+			font-size: 16px;
+			line-height: 150%;
+			resize: none;
+
+		}
+
+		.join form input::placeholder {
+			font-family: Muli;
+			padding-left: 5%;
+		}
+
+		.join form button {
+			width: 100%;
+			min-height: 30px;
+			border: none;
+			padding: 10px 10px;
+			border-radius: 25px;
+
+			margin-top: 1.5%;
+
+			color: white;
+			font-family: Muli;
+			font-size: 12pt;
+			font-weight: bold;
+
+			background: linear-gradient(to right, #a2dcec, #119cc3);
+		}
+
+		.join form h4 {
+			text-align: center;
+			font-size: 10pt;
+			font-weight: 200;
+			padding-top: 3%;
+		}
+
+		.join form h4 a {
+			color: #119cc3;
+			font-weight: 600;
+		}
+
+
+		/* FOOTER STYLING */
+
+		.footer {
+			background-color: #119cc3;
+			margin: 0;
+			position: relative;
+			bottom: 75%;
+		}
+
+		.footer ul {
+			list-style-type: none;
+			text-align: center;
+			padding: 11% 0 0 0;
+			margin: 0;
+			font-size: 10pt;
+		}
+
+		.footer ul li {
+
+			display: inline;
+			text-align: center;
+			color: white;
+		}
+
+		.footer ul li a {
+
+			color: white;
+			text-decoration: none;
+			text-align: center;
+
+		}
+
+		.footer h4 {
+
+
+			text-align: center;
+			color: white;
+			font-size: 10pt;
+			font-weight: 200;
+
+			padding: 4% 0 10% 0;
+			margin: 0;
+		}
+
+		/* MOBILE DEVICES SHORTER THAN height: 575px */
+
+		/* iPhone 5/SE */
+
+		@media only screen and (max-height: 575px) {
+			.step1 .read-more-trigger {
+				bottom: 60px;
+			}
+
+			.step2 .read-more-trigger {
+				right: 25px;
+			}
+
+			.step3 .read-more-trigger,
+			.step4 .read-more-trigger,
+			.step5 .read-more-trigger {
+				right: 0%;
+			}
+
+			.step1 .read-more-state:checked~.read-more-trigger:before {
+				top: 30px;
+				right: -60px;
+			}
+
+			.step2 .read-more-state:checked~.read-more-trigger:before {
+				top: 50px;
+				left: -60px;
+			}
+			.step3 .read-more-state:checked~.read-more-trigger:before,
+			.step4 .read-more-state:checked~.read-more-trigger:before,
+			.step5 .read-more-state:checked~.read-more-trigger:before {
+				top: 50px;
+				left: -85px;
+			}
+
+			.testimonial {
+				margin-bottom: 28%;
+				min-height: 110%;
+			}
+
+			.rect {
+				bottom: 68%;
+			}
+
+			.join {
+				bottom: 78%;
+				min-height: 100%;
+
+			}
+
+			.join h1 {
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+
+			.footer {
+				bottom: 80%;
+			}
+
+		}
+
+		/* MOBILE DEVICES SHORTER THAN height: 670px */
+
+		/* iPhone 6/7/8 */
+
+		@media only screen and (min-height: 576px) and (max-height: 670px) {
+			.testimonial {
+				min-height: 100%;
+			}
+
+			.rect {
+				bottom: 64%;
+			}
+
+			.rect h2 {
+				padding-top: 8%;
+			}
+
+			.row {
+				bottom: 130%
+			}
+
+			.join {
+				min-height: 95%;
+				bottom: 74%;
+			}
+
+		}
+
+		/* MOBILE DEVICES SHORTER THAN height: 800px*/
+
+		/* iPhone 6/7/8 Plus, Pixel 2 */
+
+		@media only screen and (min-device-width: 410px) and (max-device-height: 736px) {
+			.step2 .read-more-state:checked~.read-more-trigger:before,
+			.step3 .read-more-state:checked~.read-more-trigger:before,
+			.step5 .read-more-state:checked~.read-more-trigger:before {
+				left: -110px;
+			}
+
+			.step4 .read-more-state:checked~.read-more-trigger:before {
+				left: -125px;
+			}
+
+			.step2 .read-more-trigger,
+			.step3 .read-more-trigger,
+			.step5 .read-more-trigger {
+				right: -2%;
+			}
+
+			.step4 .read-more-trigger {
+				right: -5%;
+			}
+
+			.testimonial {
+				min-height: 100%;
+			}
+
+
+			.rect {
+				bottom: 64%;
+			}
+
+			.rect h2 {
+				padding-top: 10%;
+			}
+
+			.row {
+				bottom: 150%
+			}
+
+			.join {
+				min-height: 95%;
+				bottom: 75%;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="hero background-image">
+		<img src="images/logo.png" alt="" class="logo">
+		<h1>5 Ways to Lose Weight During Menopause</h1>
+		<p>If you’re going through menopause (or even perimenopause) and you’re having trouble losing weight, you’re not alone! Between
+			the extreme hormonal fluctuations to the natural changes in metabolism as we age, it’s normal to put on a bit of weight.
+			Fortunately (with just a few simple adjustments) that weight doesn’t need to stick around.
+		</p>
+
+	</div>
+
+	<section class="yellow_box">
+		<p>We've helped women just like you lose weight and get their health back for over 10 years. So, just follow our 5 tips for
+			losing weight during menopause and you'll look leaner, be bursting with energy, and get through "the change" feeling better
+			than ever.</p>
+	</section>
+
+	<div class="step step1">
+		<img src="images/Step_1.png" alt="" class="stepImg">
+		<img src="images/Step_1_Icon.png" alt="" class="stepIcon icon1">
+		<h2>Step 1: Upgrade Your Nighttime Routine</h2>
+
+		<input type="checkbox" class="read-more-state" id="post_1" />
+		<p class="read-more-wrap">
+			<span class="intro">Without sleep, your cortisol levels go up. Cortisol not only makes you feel stressed, but it causes bloating and forces
+				the body to</span>
+			<span class="dots">...</span>
+
+			<span class="read-more-target">
+
+				<span class="intro">hold on to excess fat. During menopause, between the hormonal changes, hot flashes, and night sweats - getting your 8
+					hours takes a bit more work.</span>
+
+				<span class="title1">Create a Nightly Routine for Better Sleep</span>
+				<span class="step1par1">About an hour before bed, put your phone or computer away. The blue light interferes with melatonin production and keeps
+					you awake. After the phone is stashed, do a simple, relaxing activity. Whether you read a book, take a bath, or set
+					aside a few minutes to write down your thoughts for the day, your mind will start to unwind and your stress levels will
+					go down.</span>
+
+				<span class="title1">Same Time. Every Night.</span>
+				<span class="step1par2">At least 8 hours before you need to get up, put yourself to bed. Even if you don’t fall asleep right away, the fact that
+					you’re resting for a full 8 hours will help your general energy and fat burning potential.</span>
+
+				<span class="step1par3">To find more tips on getting a good night’s sleep, check out our article:</span>
+
+				<span class="link">
+					<a href="#">Naturally Fall Asleep Faster! 3 Life- Changing Hacks to a Better Sleep</a>
+				</span>
+			</span>
+		</p>
+
+		<label for="post_1" class="read-more-trigger"></label>
+
+	</div>
+
+	<div class="step step2">
+		<img src="images/Step_2.png" alt="" class="stepImg">
+		<img src="images/Step_2_Icon.png" alt="" class="stepIcon icon2">
+		<h2>Step 2: Build Muscle with Vinyasa Yoga</h2>
+		<h4>Make That Muscle</h4>
+
+		<input type="checkbox" class="read-more-state" id="post_2" />
+		<p class="read-more-wrap">
+			<span class="intro">As we age, muscle mass declines. Since muscle burns about 3 times as many calories
+			</span>
+			<span class="dots">...</span>
+
+			<span class="read-more-target">
+				<span class="intro">as fat, we want all the muscle we can get! Now, we’re not saying you need to become a body builder, but weight training
+					is more important during menopause.</span>
+				<br>
+				<span class="title2">Yoga IS Weight Training</span>
+				<span class="step1par2">Yoga lets you use your own body weight to get strong, lean muscles. Plus, it’s easy on your joints, increases flexibility,
+					and helps reduce stress. No matter your flexibility, vinyasa yoga is great. In fact, it’s one of the most gentle forms
+					of exercise around, so it’s perfect for all fitness levels.</span>
+
+				<span class="link-wrap">Check out our
+					<span class="link">
+						<a href="#">Perks of Being a Yogi</a>
+					</span>
+					article to find all the ways yoga can improve your life.
+
+				</span>
+			</span>
+		</p>
+
+		<label for="post_2" class="read-more-trigger"></label>
+	</div>
+
+	<div class="step step3">
+		<img src="images/Step_3.png" alt="" class="stepImg">
+		<img src="images/Step_3_Icon.png" alt="" class="stepIcon icon3">
+		<h2>Step 3: Avoid Unfermented Soy</h2>
+		<h4>Fermented vs. Unfermented</h4>
+
+		<input type="checkbox" class="read-more-state" id="post_3" />
+		<p class="read-more-wrap">
+			<span class="intro">Soy products like natto, miso, and tempeh go through a long fermentation process to become
+			</span>
+			<span class="dots">...</span>
+
+			<span class="read-more-target">
+				<span class="intro">super gut friendly and full of nutrients. But things like soy milk, tofu, and soy sauce (the soy products we actually
+					eat on a daily basis) are unfermented. These foods are hard to digest and contain harmful isoflavones that you should
+					avoid during menopause.
+				</span>
+				<br>
+				<span class="title3">Isoflavones Block Estrogen</span>
+				<span class="step3par2">When estrogen isn’t absorbed properly, your hormonal levels are disrupted, and your thyroid can’t function adequately.
+					All together - that means weight gain.</span>
+
+				<span class="title3">How to Avoid Soy.</span>
+				<span class="step3par3">For a dairy alternative, switch to coconut or almond milk. For vegetarian protein, try beans, lentils, and nuts. instead
+					of soy sauce, use coconut aminos. It’s gluten-free, vegan, lower in sodium, and contains 17 healthy amino acids. Plus,
+					it tastes exactly like soy sauce! You get all the flavor, none of the side effects, and a little extra nutrition with
+					every bite.</span>
+
+				<span class="link-wrap">
+					<span class="tog">Try coconut aminos in our healthy</span>
+					<span class="link tog">
+						<a href="#">Chicken Fried Rice Recipe.</a>
+					</span>
+				</span>
+
+				<span class="protein">
+					Proteins: 4 | Fats: 0 | Carbs: 2
+				</span>
+			</span>
+		</p>
+
+		<label for="post_3" class="read-more-trigger"></label>
+	</div>
+
+	<div class="step step4">
+		<img src="images/Step_4.png" alt="" class="stepImg">
+		<img src="images/Step_4_Icon.png" alt="" class="stepIcon icon4">
+		<h2>Step 4: Shop These Special Sections of your Store</h2>
+		<h4>Menopause Makes You Hungry</h4>
+		<input type="checkbox" class="read-more-state" id="post_4" />
+		<p class="read-more-wrap">
+			<span class="intro">As your hormones fluctuate, your appetite naturally increases. Instead of trying to shut down
+			</span>
+			<span class="dots">...</span>
+
+			<span class="read-more-target">
+				<span class="intro">your appetite or greatly restrict your calories to lose weight during menopause, it’s better to let yourself eat the
+					right foods.
+				</span>
+				<br>
+				<span class="title4 top">Eat as Much As You Want...
+					<br class="break">From the Perimeter</span>
+				<span class="step4par1">At the perimeter of the grocery store, you’ll find produce, meat, dairy, and eggs. These foods fuel your body with healing,
+					nutrient rich produce and hearty protein that will help you lose weight and lessen aggravating symptoms.</span>
+
+				<span class="title4">Avoid Processed Food.</span>
+				<span class="step4par2">What’s not in the perimeter? Processed Food. Things like bread, microwave meals, and even 100 calorie snack packs are
+					full of toxic, chemical ingredients that raise your blood sugar, harm your liver, and make it even harder to lose weight.</span>
+
+				<span class="step4par3">Ditch the junk and try this hearty “pasta” dish. Full of fiber, protein, and deliciousness, it’ll keep your metabolism
+					moving.
+				</span>
+
+				<span class="link">
+					<a href="#">http://members.beyonddiet.com/recipe/pesto-chicken-broccoli-and-zoodles</a>
+				</span>
+
+				<span>Proteins: 4 | Fats: 1 | Carbs:2</span>
+			</span>
+		</p>
+
+		<label for="post_4" class="read-more-trigger"></label>
+
+
+	</div>
+
+	<div class="step step5">
+		<img src="images/Step_5.png" alt="" class="stepImg">
+		<img src="images/Step_5_Icon.png" alt="" class="stepIcon icon5">
+		<h2>Step 5: Enjoy Coffee the Right Way</h2>
+		<h4>Hot Coffee = Hot Flash</h4>
+		<input type="checkbox" class="read-more-state" id="post_5" />
+		<p class="read-more-wrap">
+			<span class="intro">Coffee can trigger a hot flash. Strangely, it’s not just the caffeine that’s triggering. It’s the heat.
+			</span>
+			<span class="dots">...</span>
+
+			<span class="read-more-target">
+				<span class="intro">When you drink something warm (even a plain glass of hot water), that sudden heat can set off a flash.
+				</span>
+				<span>Instead of drinking a steaming hot cup of joe every morning, switch to iced coffee.</span>
+
+				<span class="title5">Coffee in Moderation</span>
+				<span class="step5par1">Too much caffeine interferes with sleep and increases blood pressure and cortisol levels - all things that get in the
+					way of weight loss.</span>
+
+				<span class="step5par2">Thankfully, one cup of coffee is perfectly fine. It gives you a bit of caffeine for energy, but not enough to trigger
+					the side effects. With an 8-ounce iced coffee to start your day, you’ll avoid hot flashes and keep your weight loss
+					on track.</span>
+
+				<span class="link-wrap">
+					<span class="tog">Feel free to read our blog post:</span>
+					<span class="link tog">
+						<a href="#">The Truth about Coffee and Your Health</a>
+					</span>
+					to find our the pros and cons of the morning drink.
+
+				</span>
+
+			</span>
+		</p>
+
+		<label for="post_5" class="read-more-trigger"></label>
+	</div>
+	<div class="testimonial background-image">
+		<div class="testimonial-form">
+			<div class="testimonial-block">
+				<h1>Real people,
+					<br> real results.</h1>
+				<q>
+					I am down to the weight I want to be, weight loss was steady and quick, and I enjoy a variety of foods without ever feeling
+					hungry
+				</q>
+
+
+				<h4>&mdash; ROSE</h4>
+				<a href="#">Join Beyond Diet Today</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="rect">
+		<img src="images/Oval.png" alt="" class="ovalImg">
+		<div class="oval">
+
+			<h2>A Happier,
+				<br>Healthier You.</h2>
+
+			<div class="row">
+				<div class="col col1">
+					<img src="Images/checkmark.png" alt="">
+					<br>3000+
+					<br>Recipes
+				</div>
+				<div class="col col2">
+					<img src="Images/checkmark.png" alt="">
+					<br>Supportive
+					<br>Community
+				</div>
+				<div class="col col3">
+					<img src="Images/checkmark.png" alt="">
+					<br>
+					<strike>$97 Value</strike>
+					<br>Free Today
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<div class="join background-image">
+		<h1>Join Beyond Diet for Free Today.</h1>
+		<form>
+			<input type="text" autocomplete="given-name" placeholder="First Name">
+			<input type="email" autocomplete="email" placeholder="Email Address">
+			<input type="password" autocomplete="new-password" name="password" id="password" placeholder="Password">
+			<input type="password" autocomplete="new-password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+			<button>Access My Free Membership</button>
+
+			<h4>Already have an account?
+				<a href="#">Log In Here</a>
+			</h4>
+		</form>
+	</div>
+
+	<div class="footer">
+		<ul>
+			<li>
+				<a href="#">Health Disclaimer </a>|
+			</li>
+			<li>
+				<a href="#">Privacy Policy </a>|
+			</li>
+			<li>
+				<a href="#">Terms & Conditions</a>
+			</li>
+		</ul>
+
+		<h4>&copy;2018 Live Smart Solutions LLC</h4>
+	</div>
+
+</body>
+
+</html>
